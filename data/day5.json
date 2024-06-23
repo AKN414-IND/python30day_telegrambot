@@ -1,0 +1,40 @@
+{
+  "Day 5": {
+    "Topic": "Basic Operators",
+    "Explanation": "Python supports a variety of operators for performing arithmetic, comparison, assignment, and logical operations. These are fundamental tools in any programming language, allowing you to manipulate values and control the flow of execution based on conditions.",
+    "Example": {
+      "Arithmetic": {
+        "Addition": "a = 5 + 3  # Result is 8",
+        "Subtraction": "b = 10 - 2  # Result is 8",
+        "Multiplication": "c = 4 * 2  # Result is 8",
+        "Division": "d = 16 / 2  # Result is 8.0",
+        "Modulus": "e = 18 % 10  # Remainder is 8",
+        "Exponentiation": "f = 2 ** 3  # Result is 8"
+      },
+      "Comparison": {
+        "Equal": "5 == 3  # False",
+        "Not Equal": "5 != 3  # True",
+        "Greater than": "5 > 3  # True",
+        "Less than": "5 < 3  # False",
+        "Greater or equal": "5 >= 3  # True",
+        "Less or equal": "5 <= 3  # False"
+      },
+      "Assignment": {
+        "Simple": "g = 5  # Assigns 5 to g",
+        "Increment": "g += 3  # g is now 8",
+        "Decrement": "g -= 3  # g is now 2",
+        "Multiply": "g *= 2  # g is now 10",
+        "Divide": "g /= 2  # g is now 2.5"
+      },
+      "Logical": {
+        "AND": "True and False  # False",
+        "OR": "True or False  # True",
+        "NOT": "not True  # False"
+      }
+    },
+    "Exercise": {
+      "Task": "Create a script that uses all types of basic operators. Define at least two variables and perform different operations on them. Print the results for each operation.",
+      "Hint": "Define variables, perform operations, and print each result. Make sure to include at least one example of each operator type (arithmetic, comparison, assignment, and logical)."
+    }
+  }
+}

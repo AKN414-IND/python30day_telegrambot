@@ -1,0 +1,20 @@
+{
+    "Day 2": {
+      "Topic": "Setting up Python",
+      "Explanation": "Setting up Python involves installing the Python interpreter on your computer. This enables you to write and run Python scripts. The official Python website provides installers for Windows, macOS, and Linux. During installation, ensure that you add Python to your system's path to easily run Python from any command prompt or terminal.",
+      "Example": {
+        "Steps": [
+          "Visit the official Python website (https://www.python.org).",
+          "Download the Python installer for your operating system.",
+          "Run the installer. Ensure to check 'Add Python 3.x to PATH' before clicking 'Install Now'.",
+          "Open a command prompt or terminal and type 'python --version' to verify the installation."
+        ],
+        "Description": "These steps guide you through downloading and installing Python, and verifying the installation by checking the Python version installed."
+      },
+      "Exercise": {
+        "Task": "Install Python on your computer following the provided steps and run the command to check the Python version. Write a simple print statement and execute it.",
+        "Hint": "After installation, create a text file named 'test.py', write 'print(\"Python is installed!\")' in the file, save it, and run it from your command prompt or terminal by typing 'python test.py'."
+      }
+    }
+  }
+  

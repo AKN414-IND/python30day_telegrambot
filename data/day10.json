@@ -1,0 +1,67 @@
+{
+    "Day 10": {
+      "Topic": "Dictionaries",
+      "Explanation": "Dictionaries in Python are unordered collections of items. Each item is stored as a key-value pair. Dictionaries are mutable, meaning they can be changed after they are created. They are useful for storing data that is associated with unique keys, allowing for quick lookups.",
+      "Examples": {
+        "Creating a Dictionary": {
+          "Code": "my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}",
+          "Description": "This example shows how to create a dictionary with keys 'name', 'age', and 'city'."
+        },
+        "Accessing Values": {
+          "Code": "name = my_dict['name']  # 'Alice'\nage = my_dict['age']  # 25",
+          "Description": "This example shows how to access values in a dictionary using their keys."
+        },
+        "Modifying Values": {
+          "Code": "my_dict['age'] = 26  # Updates the age to 26",
+          "Description": "This example shows how to change the value associated with a key."
+        },
+        "Adding Items": {
+          "Code": "my_dict['email'] = 'alice@example.com'  # Adds a new key-value pair for email",
+          "Description": "This example shows how to add a new key-value pair to the dictionary."
+        },
+        "Removing Items": {
+          "Code": "del my_dict['city']  # Removes the key 'city' and its value",
+          "Description": "This example shows how to remove a key-value pair from the dictionary."
+        },
+        "Iterating Over a Dictionary": {
+          "Code": "for key, value in my_dict.items():\n    print(f'{key}: {value}')",
+          "Description": "This example shows how to iterate over key-value pairs in a dictionary using the items() method."
+        }
+      },
+      "Built-in Functions": {
+        "items()": {
+          "Description": "The items() method returns a view object that displays a list of dictionary's key-value tuple pairs.",
+          "Example": "items = my_dict.items()  # Returns dict_items([('name', 'Alice'), ('age', 25), ('email', 'alice@example.com')])"
+        },
+        "keys()": {
+          "Description": "The keys() method returns a view object that displays a list of all the keys in the dictionary.",
+          "Example": "keys = my_dict.keys()  # Returns dict_keys(['name', 'age', 'email'])"
+        },
+        "values()": {
+          "Description": "The values() method returns a view object that displays a list of all the values in the dictionary.",
+          "Example": "values = my_dict.values()  # Returns dict_values(['Alice', 26, 'alice@example.com'])"
+        },
+        "get()": {
+          "Description": "The get() method returns the value for a specified key if the key is in the dictionary. If the key is not found, it returns a default value (None if not provided).",
+          "Example": "age = my_dict.get('age')  # Returns 26\naddress = my_dict.get('address', 'Not Found')  # Returns 'Not Found'"
+        },
+        "update()": {
+          "Description": "The update() method updates the dictionary with elements from another dictionary object or from an iterable of key-value pairs.",
+          "Example": "my_dict.update({'age': 27, 'city': 'Boston'})  # Updates the dictionary with new age and city"
+        },
+        "pop()": {
+          "Description": "The pop() method removes the specified key and returns the corresponding value. If the key is not found, it raises a KeyError.",
+          "Example": "age = my_dict.pop('age')  # Removes 'age' and returns its value 26"
+        },
+        "clear()": {
+          "Description": "The clear() method removes all items from the dictionary.",
+          "Example": "my_dict.clear()  # Removes all key-value pairs from the dictionary"
+        }
+      },
+      "Exercise": {
+        "Task": "Create a dictionary to store information about a book (title, author, year published, genre). Perform the following operations: add a new key-value pair for the ISBN number, update the year published, remove the genre, and print all the key-value pairs.",
+        "Hint": "Use the examples and built-in functions provided. Start by creating a dictionary with the initial book information, then use the appropriate methods to perform the operations."
+      }
+    }
+  }
+  

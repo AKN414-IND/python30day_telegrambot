@@ -1,0 +1,51 @@
+{
+    "Day 23": {
+      "Topic": "Introduction to Web Scraping",
+      "Explanation": "Web scraping is the process of extracting data from websites. In Python, libraries like BeautifulSoup and requests make it easy to fetch web pages and parse their content. Web scraping can be used for data analysis, content aggregation, and many other purposes.",
+      "Examples": {
+        "Installing Required Libraries": {
+          "Code": "pip install requests\npip install beautifulsoup4",
+          "Description": "This example shows how to install the required libraries using pip."
+        },
+        "Fetching a Web Page": {
+          "Code": "import requests\n\nurl = 'https://example.com'\nresponse = requests.get(url)\nprint(response.content)",
+          "Description": "This example shows how to use the `requests` library to fetch the content of a web page."
+        },
+        "Parsing HTML with BeautifulSoup": {
+          "Code": "from bs4 import BeautifulSoup\n\nhtml_content = '<html><head><title>Example</title></head><body><h1>Hello, World!</h1></body></html>'\nsoup = BeautifulSoup(html_content, 'html.parser')\nprint(soup.title.text)  # Outputs: Example\nprint(soup.h1.text)  # Outputs: Hello, World!",
+          "Description": "This example shows how to use BeautifulSoup to parse HTML content and extract data from it."
+        },
+        "Extracting Specific Data": {
+          "Code": "import requests\nfrom bs4 import BeautifulSoup\n\nurl = 'https://example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.content, 'html.parser')\nfor link in soup.find_all('a'):\n    print(link.get('href'))",
+          "Description": "This example shows how to extract all hyperlinks from a web page."
+        },
+        "Handling Complex HTML Structures": {
+          "Code": "import requests\nfrom bs4 import BeautifulSoup\n\nurl = 'https://example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.content, 'html.parser')\n\n# Extracting data from a table\nfor row in soup.find('table').find_all('tr'):\n    cells = row.find_all('td')\n    for cell in cells:\n        print(cell.text.strip())",
+          "Description": "This example shows how to handle complex HTML structures, such as extracting data from a table."
+        }
+      },
+      "Built-in Functions": {
+        "requests.get()": {
+          "Description": "The `requests.get()` function sends a GET request to the specified URL and returns a response object.",
+          "Example": "response = requests.get('https://example.com')"
+        },
+        "BeautifulSoup()": {
+          "Description": "The `BeautifulSoup()` constructor parses HTML or XML content and creates a BeautifulSoup object.",
+          "Example": "soup = BeautifulSoup(html_content, 'html.parser')"
+        },
+        "soup.find_all()": {
+          "Description": "The `find_all()` method searches the entire HTML document and returns a list of all matching elements.",
+          "Example": "links = soup.find_all('a')"
+        },
+        "soup.find()": {
+          "Description": "The `find()` method searches the entire HTML document and returns the first matching element.",
+          "Example": "title = soup.find('title')"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) fetches the HTML content of a web page, (2) parses the HTML to extract all paragraphs and their text, (3) extracts all links from the page, and (4) handles any potential errors.",
+        "Hint": "Use the `requests` library to fetch the web page and BeautifulSoup to parse the HTML. Use the `find_all()` method to extract paragraphs and links. Check the response status code to handle errors appropriately."
+      }
+    }
+  }
+  

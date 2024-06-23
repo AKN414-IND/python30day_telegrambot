@@ -1,0 +1,15 @@
+{
+    "Day 3": {
+      "Topic": "Your First Python Program",
+      "Explanation": "After setting up Python, the next step is writing and running your first program. This is usually a simple script that prints a message. Python scripts are written in plain text files with a '.py' extension. You can use any text editor to create and edit these files, such as Notepad or a code editor like VS Code.",
+      "Example": {
+        "Code": "print('Hello, Python!')",
+        "Description": "This program prints 'Hello, Python!' to the console. It demonstrates how to output text using the print function in Python."
+      },
+      "Exercise": {
+        "Task": "Create a new Python file called 'greeting.py' and write a program that prints 'Welcome to Python programming!' to the console. Run this program from your command prompt or terminal.",
+        "Hint": "Use the print function to display your greeting message. To run the program, navigate to the folder containing 'greeting.py' in your command prompt or terminal and type 'python greeting.py'."
+      }
+    }
+  }
+  

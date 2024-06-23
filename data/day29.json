@@ -1,0 +1,67 @@
+{"Day 29": {
+  "Topic": "Coding Practice: Part 1",
+  "Explanation": "To solidify your understanding of the topics covered so far, practice is essential. This set of coding questions will help reinforce the concepts and techniques you have learned.",
+  "Coding Questions": [
+    {
+      "Question": "1. Write a Python program to check if a number is prime.",
+      "Hint": "Use a loop to check divisibility from 2 to the square root of the number."
+    },
+    {
+      "Question": "2. Write a function to find the factorial of a number using recursion.",
+      "Hint": "The factorial of n is n * factorial(n-1)."
+    },
+    {
+      "Question": "3. Implement a function to find the maximum element in a list.",
+      "Hint": "Use a loop to iterate through the list and compare elements."
+    },
+    {
+      "Question": "4. Write a Python program to reverse a string.",
+      "Hint": "Use slicing to reverse the string."
+    },
+    {
+      "Question": "5. Write a function to merge two sorted lists into a single sorted list.",
+      "Hint": "Use two pointers to compare elements from both lists."
+    },
+    {
+      "Question": "6. Implement a function to check if a string is a palindrome.",
+      "Hint": "A palindrome reads the same backward as forward."
+    },
+    {
+      "Question": "7. Write a program to remove duplicates from a list.",
+      "Hint": "Use a set to store unique elements."
+    },
+    {
+      "Question": "8. Write a function to count the frequency of each element in a list.",
+      "Hint": "Use a dictionary to store element counts."
+    },
+    {
+      "Question": "9. Write a Python program to find the second largest number in a list.",
+      "Hint": "Sort the list and find the second largest element."
+    },
+    {
+      "Question": "10. Implement a function to calculate the Fibonacci sequence up to n terms.",
+      "Hint": "Use a loop or recursion to generate the sequence."
+    },
+    {
+      "Question": "11. Write a function to check if two strings are anagrams.",
+      "Hint": "Anagrams have the same characters with the same frequencies."
+    },
+    {
+      "Question": "12. Write a Python program to find the GCD of two numbers.",
+      "Hint": "Use the Euclidean algorithm."
+    },
+    {
+      "Question": "13. Implement a binary search algorithm.",
+      "Hint": "Binary search works on sorted lists by repeatedly dividing the search interval in half."
+    },
+    {
+      "Question": "14. Write a function to find the intersection of two lists.",
+      "Hint": "Use sets to find common elements."
+    },
+    {
+      "Question": "15. Write a program to implement a stack using a list.",
+      "Hint": "Use list methods `append()` for push and `pop()` for pop."
+    }
+  ]
+}}
+  

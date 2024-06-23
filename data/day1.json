@@ -1,0 +1,15 @@
+{
+    "Day 1": {
+      "Topic": "Introduction to Python",
+      "Explanation": "Python is a popular, high-level programming language known for its simplicity and readability, making it a great choice for beginners. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used for web development, data analysis, artificial intelligence, scientific computing, and more.",
+      "Example": {
+        "Code": "print('Hello, World!')",
+        "Description": "This line of code outputs the text 'Hello, World!' to the console. It is often used as the first program when learning a new programming language."
+      },
+      "Exercise": {
+        "Task": "Write a Python program to output your name and current year.",
+        "Hint": "Use the print function to display text. Example: print('My name is John and the year is 2024.')"
+      }
+    }
+  }
+  

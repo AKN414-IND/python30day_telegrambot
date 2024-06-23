@@ -1,0 +1,43 @@
+{
+    "Day 18": {
+      "Topic": "Decorators",
+      "Explanation": "Decorators in Python are a way to modify or enhance functions or methods without changing their code. They are often used for logging, access control, instrumentation, and caching. A decorator is a function that takes another function as an argument, adds some functionality, and returns the original function or a modified version of it.",
+      "Examples": {
+        "Basic Decorator": {
+          "Code": "def my_decorator(func):\n    def wrapper():\n        print('Something is happening before the function is called.')\n        func()\n        print('Something is happening after the function is called.')\n    return wrapper\n\n@my_decorator\ndef say_hello():\n    print('Hello!')\n\nsay_hello()",
+          "Description": "This example shows how to define a basic decorator `my_decorator` that wraps the `say_hello` function. The decorator prints messages before and after the function call."
+        },
+        "Decorator with Arguments": {
+          "Code": "def my_decorator(func):\n    def wrapper(*args, **kwargs):\n        print('Something is happening before the function is called.')\n        result = func(*args, **kwargs)\n        print('Something is happening after the function is called.')\n        return result\n    return wrapper\n\n@my_decorator\ndef say_hello(name):\n    print(f'Hello, {name}!')\n\nsay_hello('Alice')",
+          "Description": "This example shows how to define a decorator that can handle arguments by using `*args` and `**kwargs` in the wrapper function."
+        },
+        "Function Returning Decorator": {
+          "Code": "def repeat(num_times):\n    def decorator_repeat(func):\n        def wrapper(*args, **kwargs):\n            for _ in range(num_times):\n                result = func(*args, **kwargs)\n            return result\n        return wrapper\n    return decorator_repeat\n\n@repeat(num_times=3)\ndef say_hello(name):\n    print(f'Hello, {name}!')\n\nsay_hello('Alice')",
+          "Description": "This example shows how to define a function `repeat` that returns a decorator. The `repeat` decorator runs the decorated function a specified number of times."
+        },
+        "Class Decorators": {
+          "Code": "class CountCalls:\n    def __init__(self, func):\n        self.func = func\n        self.num_calls = 0\n    def __call__(self, *args, **kwargs):\n        self.num_calls += 1\n        print(f'This is call number {self.num_calls} to {self.func.__name__}')\n        return self.func(*args, **kwargs)\n\n@CountCalls\ndef say_hello(name):\n    print(f'Hello, {name}!')\n\nsay_hello('Alice')\nsay_hello('Bob')",
+          "Description": "This example shows how to use a class as a decorator. The `CountCalls` class keeps track of the number of times the decorated function is called."
+        }
+      },
+      "Built-in Functions": {
+        "@staticmethod": {
+          "Description": "The `@staticmethod` decorator is used to define a static method in a class. A static method does not receive an implicit first argument (like `self` or `cls`).",
+          "Example": "class MyClass:\n    @staticmethod\n    def static_method():\n        print('This is a static method.')\n\nMyClass.static_method()"
+        },
+        "@classmethod": {
+          "Description": "The `@classmethod` decorator is used to define a class method. A class method receives the class as the first implicit argument (usually named `cls`).",
+          "Example": "class MyClass:\n    @classmethod\n    def class_method(cls):\n        print(f'This is a class method of {cls}.')\n\nMyClass.class_method()"
+        },
+        "@property": {
+          "Description": "The `@property` decorator is used to define a property method in a class, allowing you to access a method like an attribute.",
+          "Example": "class MyClass:\n    def __init__(self, value):\n        self._value = value\n    @property\n    def value(self):\n        return self._value\n\nobj = MyClass(10)\nprint(obj.value)  # Accesses the value property"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that defines a decorator `timeit` to measure the execution time of a function. Apply this decorator to a function that calculates the factorial of a number. Print the execution time for different inputs.",
+        "Hint": "Use the `time` module to get the start and end times. Define the `timeit` decorator to calculate and print the difference between the end and start times. Apply the decorator to the factorial function and test it with different inputs."
+      }
+    }
+  }
+  

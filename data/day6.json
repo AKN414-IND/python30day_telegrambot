@@ -1,0 +1,30 @@
+{
+  "Day 6": {
+    "Topic": "String Manipulation",
+    "Explanation": "Strings in Python are sequences of characters. Python provides a variety of methods to manipulate strings, such as concatenation, slicing, and various built-in functions. Understanding how to work with strings is essential for handling text data.",
+    "Examples": {
+      "Concatenation": {
+        "Code": "greeting = 'Hello' + ' ' + 'World!'",
+        "Description": "Combining strings using the + operator."
+      },
+      "Slicing": {
+        "Code": "text = 'Python'\nfirst_letter = text[0]  # P\nsubstring = text[1:4]  # yth\nlast_letter = text[-1]  # n",
+        "Description": "Accessing parts of strings using slicing."
+      },
+      "Methods": {
+        "Code": {
+          "Upper": "message = 'hello'.upper()  # HELLO",
+          "Lower": "message = 'WORLD'.lower()  # world",
+          "Replace": "message = 'Hello, World!'.replace('World', 'Python')  # Hello, Python!",
+          "Split": "words = 'Hello World'.split()  # ['Hello', 'World']",
+          "Join": "message = ' '.join(['Hello', 'World'])  # Hello World"
+        },
+        "Description": "Using built-in string methods for common operations."
+      }
+    },
+    "Exercise": {
+      "Task": "Create a Python script that performs the following: concatenate two strings, slice a string to get a substring, and use at least three different string methods. Print the results of each operation.",
+      "Hint": "Use the provided examples to guide your script. For slicing, remember that the syntax is string[start:end]. For methods, explore and use functions like upper(), lower(), replace(), split(), and join()."
+    }
+  }
+}

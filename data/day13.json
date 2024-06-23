@@ -1,0 +1,43 @@
+{
+    "Day 13": {
+      "Topic": "Modules and Packages",
+      "Explanation": "Modules and packages in Python help organize and structure code by grouping related functions, classes, and variables into separate files and directories. A module is a single Python file containing Python definitions and statements. A package is a directory containing multiple modules, typically with an __init__.py file to make the directory a package.",
+      "Examples": {
+        "Creating a Module": {
+          "Code": "# File: my_module.py\n\ndef greet(name):\n    print(f'Hello, {name}!')",
+          "Description": "This example shows how to create a module by saving a Python file named my_module.py with a function definition."
+        },
+        "Using a Module": {
+          "Code": "# File: main.py\n\nimport my_module\n\nmy_module.greet('Alice')  # Outputs: Hello, Alice!",
+          "Description": "This example shows how to use a module by importing it and calling its functions."
+        },
+        "Creating a Package": {
+          "Code": "# Directory structure:\n# my_package/\n# ├── __init__.py\n# ├── module1.py\n# └── module2.py\n\n# File: my_package/__init__.py\n# (This file can be empty or used to initialize the package)\n\n# File: my_package/module1.py\ndef func1():\n    print('This is function 1 from module 1')\n\n# File: my_package/module2.py\ndef func2():\n    print('This is function 2 from module 2')",
+          "Description": "This example shows how to create a package by organizing modules into a directory with an __init__.py file."
+        },
+        "Using a Package": {
+          "Code": "# File: main.py\n\nfrom my_package import module1, module2\n\nmodule1.func1()  # Outputs: This is function 1 from module 1\nmodule2.func2()  # Outputs: This is function 2 from module 2",
+          "Description": "This example shows how to use a package by importing its modules and calling their functions."
+        }
+      },
+      "Built-in Functions": {
+        "import": {
+          "Description": "The `import` statement is used to include the definitions (functions, variables, classes) from one module into another.",
+          "Example": "import math  # Imports the math module\nprint(math.sqrt(16))  # Uses the sqrt function from the math module"
+        },
+        "from ... import": {
+          "Description": "The `from ... import` statement allows importing specific attributes from a module.",
+          "Example": "from math import sqrt  # Imports only the sqrt function from the math module\nprint(sqrt(16))  # Uses the imported sqrt function"
+        },
+        "as": {
+          "Description": "The `as` keyword is used to alias modules or attributes during import.",
+          "Example": "import numpy as np  # Imports the numpy module and aliases it as np\nprint(np.array([1, 2, 3]))  # Uses numpy functions with the alias np"
+        }
+      },
+      "Exercise": {
+        "Task": "Create a module named `calculator` with functions for addition, subtraction, multiplication, and division. Then, create a main script that imports the `calculator` module and uses its functions to perform calculations with user input.",
+        "Hint": "Define the arithmetic functions in `calculator.py`. In the main script, use `input()` to get user input, call the appropriate functions from the `calculator` module, and print the results."
+      }
+    }
+  }
+  

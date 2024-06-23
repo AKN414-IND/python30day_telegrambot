@@ -1,0 +1,75 @@
+{
+    "Day 25": {
+      "Topic": "Data Visualization with Matplotlib",
+      "Explanation": "Matplotlib is a powerful Python library used for creating static, interactive, and animated visualizations. It is widely used for data visualization in scientific computing, data analysis, and machine learning. Matplotlib provides various functions to create different types of plots, such as line plots, bar plots, histograms, and scatter plots.",
+      "Examples": {
+        "Installing Matplotlib": {
+          "Code": "pip install matplotlib",
+          "Description": "This example shows how to install the Matplotlib library using pip."
+        },
+        "Basic Line Plot": {
+          "Code": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 3, 5, 7, 11]\n\nplt.plot(x, y)\nplt.xlabel('X-axis')\nplt.ylabel('Y-axis')\nplt.title('Basic Line Plot')\nplt.show()",
+          "Description": "This example shows how to create a basic line plot using Matplotlib."
+        },
+        "Bar Plot": {
+          "Code": "import matplotlib.pyplot as plt\n\ncategories = ['A', 'B', 'C']\nvalues = [4, 7, 1]\n\nplt.bar(categories, values)\nplt.xlabel('Categories')\nplt.ylabel('Values')\nplt.title('Bar Plot')\nplt.show()",
+          "Description": "This example shows how to create a bar plot using Matplotlib."
+        },
+        "Histogram": {
+          "Code": "import matplotlib.pyplot as plt\n\nvalues = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]\n\nplt.hist(values, bins=4)\nplt.xlabel('Value')\nplt.ylabel('Frequency')\nplt.title('Histogram')\nplt.show()",
+          "Description": "This example shows how to create a histogram using Matplotlib."
+        },
+        "Scatter Plot": {
+          "Code": "import matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [2, 3, 5, 7, 11]\n\nplt.scatter(x, y)\nplt.xlabel('X-axis')\nplt.ylabel('Y-axis')\nplt.title('Scatter Plot')\nplt.show()",
+          "Description": "This example shows how to create a scatter plot using Matplotlib."
+        },
+        "Pie Chart": {
+          "Code": "import matplotlib.pyplot as plt\n\nlabels = ['A', 'B', 'C']\nsizes = [40, 35, 25]\n\nplt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)\nplt.title('Pie Chart')\nplt.show()",
+          "Description": "This example shows how to create a pie chart using Matplotlib."
+        }
+      },
+      "Built-in Functions": {
+        "plt.plot()": {
+          "Description": "The `plt.plot()` function is used to create a line plot.",
+          "Example": "plt.plot(x, y)"
+        },
+        "plt.bar()": {
+          "Description": "The `plt.bar()` function is used to create a bar plot.",
+          "Example": "plt.bar(categories, values)"
+        },
+        "plt.hist()": {
+          "Description": "The `plt.hist()` function is used to create a histogram.",
+          "Example": "plt.hist(values, bins=4)"
+        },
+        "plt.scatter()": {
+          "Description": "The `plt.scatter()` function is used to create a scatter plot.",
+          "Example": "plt.scatter(x, y)"
+        },
+        "plt.pie()": {
+          "Description": "The `plt.pie()` function is used to create a pie chart.",
+          "Example": "plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140)"
+        },
+        "plt.show()": {
+          "Description": "The `plt.show()` function is used to display the plot.",
+          "Example": "plt.show()"
+        },
+        "plt.xlabel()": {
+          "Description": "The `plt.xlabel()` function sets the label for the x-axis.",
+          "Example": "plt.xlabel('X-axis')"
+        },
+        "plt.ylabel()": {
+          "Description": "The `plt.ylabel()` function sets the label for the y-axis.",
+          "Example": "plt.ylabel('Y-axis')"
+        },
+        "plt.title()": {
+          "Description": "The `plt.title()` function sets the title of the plot.",
+          "Example": "plt.title('Basic Line Plot')"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) creates a line plot of a mathematical function (e.g., y = x^2), (2) creates a bar plot showing some categorical data, (3) creates a histogram of a dataset, (4) creates a scatter plot of two related variables, and (5) creates a pie chart showing the distribution of different categories.",
+        "Hint": "Use the `plt.plot()`, `plt.bar()`, `plt.hist()`, `plt.scatter()`, and `plt.pie()` functions to create the plots. Label the axes and add titles to each plot for clarity."
+      }
+    }
+  }
+  

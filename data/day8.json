@@ -1,0 +1,71 @@
+{
+    "Day 8": {
+      "Topic": "Lists and List Operations",
+      "Explanation": "Lists in Python are ordered collections of items that can hold a variety of object types. Lists are mutable, meaning their elements can be changed. They are one of the most commonly used data structures in Python due to their flexibility and ease of use.",
+      "Examples": {
+        "Creating a List": {
+          "Code": "fruits = ['apple', 'banana', 'cherry']",
+          "Description": "This example shows how to create a list of fruits. Lists are defined using square brackets []."
+        },
+        "Accessing Elements": {
+          "Code": "first_fruit = fruits[0]  # 'apple'\nlast_fruit = fruits[-1]  # 'cherry'",
+          "Description": "This example shows how to access elements in a list. Indexing starts at 0 for the first element. Negative indexing can be used to access elements from the end of the list."
+        },
+        "Modifying Elements": {
+          "Code": "fruits[1] = 'blueberry'  # ['apple', 'blueberry', 'cherry']",
+          "Description": "This example shows how to change the second element of the list. Lists are mutable, so you can change their content."
+        },
+        "Adding Elements": {
+          "Code": "fruits.append('date')  # ['apple', 'blueberry', 'cherry', 'date']",
+          "Description": "This example shows how to add a new element to the end of the list using the append() method."
+        },
+        "Removing Elements": {
+          "Code": "fruits.remove('apple')  # ['blueberry', 'cherry', 'date']",
+          "Description": "This example shows how to remove an element from the list using the remove() method."
+        },
+        "List Comprehensions": {
+          "Code": "squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]",
+          "Description": "This example shows how to create a new list using a list comprehension. List comprehensions provide a concise way to create lists."
+        }
+      },
+      "Built-in Functions": {
+        "append()": {
+          "Description": "The append() method adds a single item to the end of the list.",
+          "Example": "fruits.append('orange')  # Adds 'orange' to the end of the fruits list."
+        },
+        "remove()": {
+          "Description": "The remove() method removes the first occurrence of a specified value from the list.",
+          "Example": "fruits.remove('banana')  # Removes 'banana' from the fruits list."
+        },
+        "pop()": {
+          "Description": "The pop() method removes and returns the item at the specified index. If no index is specified, it removes and returns the last item.",
+          "Example": "fruits.pop()  # Removes and returns the last item 'cherry'.\nfruits.pop(1)  # Removes and returns the item at index 1, 'banana'."
+        },
+        "insert()": {
+          "Description": "The insert() method inserts an item at a specified index.",
+          "Example": "fruits.insert(1, 'mango')  # Inserts 'mango' at index 1."
+        },
+        "index()": {
+          "Description": "The index() method returns the index of the first occurrence of a specified value.",
+          "Example": "index = fruits.index('apple')  # Returns the index of 'apple'."
+        },
+        "count()": {
+          "Description": "The count() method returns the number of times a specified value appears in the list.",
+          "Example": "count = fruits.count('apple')  # Returns the count of 'apple' in the list."
+        },
+        "sort()": {
+          "Description": "The sort() method sorts the list in ascending order by default. It can also sort in descending order if specified.",
+          "Example": "fruits.sort()  # Sorts the fruits list in ascending order.\nfruits.sort(reverse=True)  # Sorts the fruits list in descending order."
+        },
+        "reverse()": {
+          "Description": "The reverse() method reverses the order of the list.",
+          "Example": "fruits.reverse()  # Reverses the order of the fruits list."
+        }
+      },
+      "Exercise": {
+        "Task": "Create a list of your favorite movies. Perform the following operations: add a new movie to the list, remove a movie from the list, print the first and last movie in the list, and create a new list that contains the lengths of each movie title.",
+        "Hint": "Use the append() method to add a movie, the remove() method to delete a movie, and list indexing to access the first and last elements. For the new list, use a list comprehension to calculate the lengths of the movie titles."
+      }
+    }
+  }
+  

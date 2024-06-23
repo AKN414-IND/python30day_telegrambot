@@ -1,0 +1,43 @@
+{
+    "Day 15": {
+      "Topic": "Error and Exception Handling",
+      "Explanation": "Errors and exceptions are common in programming. Python provides a robust way to handle these errors using try, except, else, and finally blocks. This ensures that your program can handle unexpected situations gracefully without crashing.",
+      "Examples": {
+        "Basic try-except": {
+          "Code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Error: Cannot divide by zero')",
+          "Description": "This example shows how to handle a division by zero error using a try-except block. The ZeroDivisionError is caught and a message is printed."
+        },
+        "Catching Multiple Exceptions": {
+          "Code": "try:\n    num = int(input('Enter a number: '))\n    result = 10 / num\nexcept ZeroDivisionError:\n    print('Error: Cannot divide by zero')\nexcept ValueError:\n    print('Error: Invalid input, please enter a number')",
+          "Description": "This example shows how to handle multiple exceptions by using multiple except blocks. Both ZeroDivisionError and ValueError are caught and handled."
+        },
+        "Using else": {
+          "Code": "try:\n    num = int(input('Enter a number: '))\n    result = 10 / num\nexcept ZeroDivisionError:\n    print('Error: Cannot divide by zero')\nexcept ValueError:\n    print('Error: Invalid input, please enter a number')\nelse:\n    print(f'Result is {result}')",
+          "Description": "This example shows how to use the else block, which runs if no exceptions are raised in the try block."
+        },
+        "Using finally": {
+          "Code": "try:\n    file = open('example.txt', 'r')\n    content = file.read()\nexcept FileNotFoundError:\n    print('Error: File not found')\nfinally:\n    file.close()\n    print('File closed')",
+          "Description": "This example shows how to use the finally block, which runs no matter what, ensuring that resources are released properly (like closing a file)."
+        },
+        "Custom Exception": {
+          "Code": "class CustomError(Exception):\n    pass\n\ntry:\n    raise CustomError('This is a custom error')\nexcept CustomError as e:\n    print(e)",
+          "Description": "This example shows how to define and raise a custom exception. Custom exceptions are useful for specific error handling in larger applications."
+        }
+      },
+      "Built-in Functions": {
+        "raise": {
+          "Description": "The raise statement allows you to throw an exception at any point in your code.",
+          "Example": "raise ValueError('A custom error message')"
+        },
+        "assert": {
+          "Description": "The assert statement is used for debugging purposes. It tests a condition, and if the condition is false, it raises an AssertionError with an optional message.",
+          "Example": "assert 2 + 2 == 4, '2 + 2 should be 4'"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that asks the user to enter two numbers and performs division. Use try-except blocks to handle division by zero and invalid input errors. Ensure the program prints the result if no errors occur, and always prints a message saying 'End of program' at the end.",
+        "Hint": "Use a try block to get the input and perform the division. Handle ZeroDivisionError and ValueError in separate except blocks. Use a finally block to print 'End of program'."
+      }
+    }
+  }
+  

@@ -1,0 +1,31 @@
+{
+    "Day 17": {
+      "Topic": "Inheritance and Polymorphism",
+      "Explanation": "Inheritance and polymorphism are key concepts in object-oriented programming (OOP). Inheritance allows one class to inherit the attributes and methods of another class. Polymorphism allows methods to do different things based on the object it is acting upon.",
+      "Examples": {
+        "Inheritance": {
+          "Code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return f'{self.name} says Woof!'\n\nclass Cat(Animal):\n    def speak(self):\n        return f'{self.name} says Meow!'\n\nmy_dog = Dog('Buddy')\nmy_cat = Cat('Whiskers')\nprint(my_dog.speak())  # Outputs: Buddy says Woof!\nprint(my_cat.speak())  # Outputs: Whiskers says Meow!",
+          "Description": "This example shows how the `Dog` and `Cat` classes inherit from the `Animal` class and override the `speak` method to provide specific implementations."
+        },
+        "Polymorphism": {
+          "Code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        pass\n\nclass Dog(Animal):\n    def speak(self):\n        return f'{self.name} says Woof!'\n\nclass Cat(Animal):\n    def speak(self):\n        return f'{self.name} says Meow!'\n\nanimals = [Dog('Buddy'), Cat('Whiskers')]\nfor animal in animals:\n    print(animal.speak())",
+          "Description": "This example demonstrates polymorphism by using the same method name (`speak`) on different objects (`Dog` and `Cat`). The method behaves differently based on the object."
+        },
+        "Super Function": {
+          "Code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed\n\nmy_dog = Dog('Buddy', 'Golden Retriever')\nprint(f'{my_dog.name} is a {my_dog.breed}')  # Outputs: Buddy is a Golden Retriever",
+          "Description": "This example shows how to use the `super` function to call the `__init__` method of the parent class (`Animal`) from the child class (`Dog`)."
+        }
+      },
+      "Built-in Functions": {
+        "super()": {
+          "Description": "The `super()` function returns a proxy object that allows you to refer to the parent class. It is used to call methods from the parent class.",
+          "Example": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed\n\nmy_dog = Dog('Buddy', 'Golden Retriever')\nprint(f'{my_dog.name} is a {my_dog.breed}')"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that defines a base class `Shape` with a method `area` that returns 0. Create two derived classes `Rectangle` and `Circle` that override the `area` method to calculate the area of a rectangle and a circle, respectively. Create objects of both derived classes and print their areas.",
+        "Hint": "Use the formula `length * width` for the area of a rectangle and `π * radius^2` for the area of a circle. Override the `area` method in each derived class to perform the appropriate calculations."
+      }
+    }
+  }
+  

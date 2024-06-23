@@ -1,0 +1,51 @@
+{
+    "Day 21": {
+      "Topic": "Lambda Functions",
+      "Explanation": "Lambda functions in Python are small, anonymous functions defined using the `lambda` keyword. They can have any number of arguments but only one expression. They are often used for short, throwaway functions that are not reused elsewhere in the code.",
+      "Examples": {
+        "Basic Lambda Function": {
+          "Code": "add = lambda x, y: x + y\nprint(add(5, 3))  # Outputs: 8",
+          "Description": "This example shows how to define a simple lambda function that adds two numbers and how to call it."
+        },
+        "Lambda Function with map()": {
+          "Code": "numbers = [1, 2, 3, 4, 5]\nsquares = list(map(lambda x: x**2, numbers))\nprint(squares)  # Outputs: [1, 4, 9, 16, 25]",
+          "Description": "This example shows how to use a lambda function with the `map()` function to square each number in a list."
+        },
+        "Lambda Function with filter()": {
+          "Code": "numbers = [1, 2, 3, 4, 5]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)  # Outputs: [2, 4]",
+          "Description": "This example shows how to use a lambda function with the `filter()` function to filter out even numbers from a list."
+        },
+        "Lambda Function with reduce()": {
+          "Code": "from functools import reduce\nnumbers = [1, 2, 3, 4, 5]\nproduct = reduce(lambda x, y: x * y, numbers)\nprint(product)  # Outputs: 120",
+          "Description": "This example shows how to use a lambda function with the `reduce()` function from the `functools` module to calculate the product of all numbers in a list."
+        },
+        "Sorting with Lambda": {
+          "Code": "points = [(2, 3), (1, 2), (4, 1)]\npoints_sorted = sorted(points, key=lambda point: point[1])\nprint(points_sorted)  # Outputs: [(4, 1), (1, 2), (2, 3)]",
+          "Description": "This example shows how to use a lambda function as a key for the `sorted()` function to sort a list of tuples based on the second element."
+        }
+      },
+      "Built-in Functions": {
+        "map()": {
+          "Description": "The `map()` function applies a given function to all items in an iterable and returns an iterator.",
+          "Example": "numbers = [1, 2, 3, 4]\nsquares = list(map(lambda x: x**2, numbers))  # Outputs: [1, 4, 9, 16]"
+        },
+        "filter()": {
+          "Description": "The `filter()` function constructs an iterator from elements of an iterable for which a function returns true.",
+          "Example": "numbers = [1, 2, 3, 4]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))  # Outputs: [2, 4]"
+        },
+        "reduce()": {
+          "Description": "The `reduce()` function applies a rolling computation to sequential pairs of values in an iterable, reducing the iterable to a single value.",
+          "Example": "from functools import reduce\nnumbers = [1, 2, 3, 4]\nproduct = reduce(lambda x, y: x * y, numbers)  # Outputs: 24"
+        },
+        "sorted()": {
+          "Description": "The `sorted()` function returns a sorted list from the items in an iterable.",
+          "Example": "points = [(2, 3), (1, 2), (4, 1)]\npoints_sorted = sorted(points, key=lambda point: point[1])  # Outputs: [(4, 1), (1, 2), (2, 3)]"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that performs the following using lambda functions: (1) create a list of tuples representing points and sort them by the sum of their coordinates, (2) filter out odd numbers from a list of numbers, (3) map a list of strings to their lengths, and (4) reduce a list of numbers to their sum.",
+        "Hint": "Use the `sorted()` function with a lambda function for sorting, `filter()` for filtering odd numbers, `map()` for mapping strings to lengths, and `reduce()` for reducing the list to the sum."
+      }
+    }
+  }
+  

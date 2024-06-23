@@ -1,0 +1,43 @@
+{
+    "Day 16": {
+      "Topic": "Classes and Objects",
+      "Explanation": "Classes and objects are the fundamental building blocks of object-oriented programming (OOP). A class is a blueprint for creating objects (instances), defining attributes (data) and methods (functions) that the objects will have. An object is an instance of a class.",
+      "Examples": {
+        "Defining a Class": {
+          "Code": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def bark(self):\n        print(f'{self.name} is barking.')",
+          "Description": "This example shows how to define a class named `Dog` with attributes `name` and `age`, and a method `bark`."
+        },
+        "Creating an Object": {
+          "Code": "my_dog = Dog('Buddy', 3)\nprint(my_dog.name)  # Outputs: Buddy\nprint(my_dog.age)  # Outputs: 3\nmy_dog.bark()  # Outputs: Buddy is barking.",
+          "Description": "This example shows how to create an instance (object) of the `Dog` class and access its attributes and methods."
+        },
+        "Class Attributes": {
+          "Code": "class Dog:\n    species = 'Canine'\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def bark(self):\n        print(f'{self.name} is barking.')\n\nmy_dog = Dog('Buddy', 3)\nprint(my_dog.species)  # Outputs: Canine",
+          "Description": "This example shows how to define a class attribute `species` that is shared by all instances of the `Dog` class."
+        },
+        "Instance Methods": {
+          "Code": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def bark(self):\n        print(f'{self.name} is barking.')\n    def get_age(self):\n        return self.age\n\nmy_dog = Dog('Buddy', 3)\nprint(my_dog.get_age())  # Outputs: 3",
+          "Description": "This example shows how to define an instance method `get_age` that returns the age of the dog."
+        },
+        "Special Methods": {
+          "Code": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def __str__(self):\n        return f'{self.name} is {self.age} years old'\n\nmy_dog = Dog('Buddy', 3)\nprint(my_dog)  # Outputs: Buddy is 3 years old",
+          "Description": "This example shows how to define the special method `__str__` to return a string representation of the object."
+        }
+      },
+      "Built-in Functions": {
+        "__init__()": {
+          "Description": "The `__init__` method is the constructor method in Python. It is called when an object is created from a class and allows the class to initialize the attributes.",
+          "Example": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\nperson = Person('Alice', 30)\nprint(person.name)  # Outputs: Alice"
+        },
+        "__str__()": {
+          "Description": "The `__str__` method is called when the `str()` function is invoked on an object. It should return a string representation of the object.",
+          "Example": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    def __str__(self):\n        return f'{self.name}, {self.age}'\n\nperson = Person('Alice', 30)\nprint(person)  # Outputs: Alice, 30"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that defines a class `Car` with attributes `make`, `model`, and `year`. Include methods to start the car, stop the car, and display its details. Create an object of the `Car` class and test all the methods.",
+        "Hint": "Define the class with the `__init__` method to initialize the attributes. Create methods like `start`, `stop`, and `display_details`. Instantiate the class and call the methods to test them."
+      }
+    }
+  }
+  

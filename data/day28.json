@@ -1,0 +1,64 @@
+{
+    "Day 28": {
+      "Topic": "Virtual Environments",
+      "Explanation": "Virtual environments in Python allow you to create isolated environments for your projects, ensuring that each project has its own dependencies, regardless of what dependencies every other project has. This helps in managing packages and dependencies effectively without conflicts.",
+      "Examples": {
+        "Creating a Virtual Environment": {
+          "Code": "python -m venv myenv",
+          "Description": "This example shows how to create a virtual environment named `myenv` using the `venv` module."
+        },
+        "Activating a Virtual Environment (Windows)": {
+          "Code": "myenv\\Scripts\\activate",
+          "Description": "This example shows how to activate the virtual environment on Windows."
+        },
+        "Activating a Virtual Environment (macOS/Linux)": {
+          "Code": "source myenv/bin/activate",
+          "Description": "This example shows how to activate the virtual environment on macOS or Linux."
+        },
+        "Deactivating a Virtual Environment": {
+          "Code": "deactivate",
+          "Description": "This example shows how to deactivate the virtual environment."
+        },
+        "Installing Packages in a Virtual Environment": {
+          "Code": "pip install requests",
+          "Description": "This example shows how to install a package, such as `requests`, in the virtual environment."
+        },
+        "Freezing Dependencies": {
+          "Code": "pip freeze > requirements.txt",
+          "Description": "This example shows how to freeze the current environment's installed packages into a `requirements.txt` file."
+        },
+        "Installing Dependencies from requirements.txt": {
+          "Code": "pip install -r requirements.txt",
+          "Description": "This example shows how to install packages from a `requirements.txt` file."
+        }
+      },
+      "Built-in Functions": {
+        "python -m venv": {
+          "Description": "The `python -m venv` command creates a virtual environment.",
+          "Example": "python -m venv myenv"
+        },
+        "activate": {
+          "Description": "The `activate` script activates the virtual environment.",
+          "Example (Windows)": "myenv\\Scripts\\activate",
+          "Example (macOS/Linux)": "source myenv/bin/activate"
+        },
+        "deactivate": {
+          "Description": "The `deactivate` command deactivates the virtual environment.",
+          "Example": "deactivate"
+        },
+        "pip install": {
+          "Description": "The `pip install` command installs packages in the virtual environment.",
+          "Example": "pip install requests"
+        },
+        "pip freeze": {
+          "Description": "The `pip freeze` command lists the installed packages in the virtual environment.",
+          "Example": "pip freeze > requirements.txt"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) creates a virtual environment, (2) activates the virtual environment, (3) installs a list of packages (e.g., `requests`, `pandas`), (4) freezes the dependencies into a `requirements.txt` file, and (5) deactivates the virtual environment.",
+        "Hint": "Use the `venv` module to create the virtual environment, activate it, use `pip` to install the packages, freeze the dependencies, and then deactivate the virtual environment. The activation and deactivation commands will vary based on your operating system."
+      }
+    }
+  }
+  

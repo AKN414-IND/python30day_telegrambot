@@ -1,0 +1,47 @@
+{
+    "Day 11": {
+      "Topic": "Looping Constructs: for and while Loops",
+      "Explanation": "Loops are used to execute a block of code repeatedly. Python provides two types of loops: `for` loops and `while` loops. `for` loops are used to iterate over a sequence (like a list, tuple, or string), while `while` loops execute as long as a specified condition is true.",
+      "Examples": {
+        "For Loop": {
+          "Code": "fruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)",
+          "Description": "This example shows how to use a `for` loop to iterate over a list of fruits and print each one."
+        },
+        "For Loop with Range": {
+          "Code": "for i in range(5):\n    print(i)",
+          "Description": "This example shows how to use a `for` loop with the `range()` function to print numbers from 0 to 4."
+        },
+        "While Loop": {
+          "Code": "count = 0\nwhile count < 5:\n    print(count)\n    count += 1",
+          "Description": "This example shows how to use a `while` loop to print numbers from 0 to 4. The loop runs as long as the condition (`count < 5`) is true."
+        },
+        "Break Statement": {
+          "Code": "for i in range(10):\n    if i == 5:\n        break\n    print(i)",
+          "Description": "This example shows how to use the `break` statement to exit a loop when a condition is met (in this case, when `i` equals 5)."
+        },
+        "Continue Statement": {
+          "Code": "for i in range(10):\n    if i % 2 == 0:\n        continue\n    print(i)",
+          "Description": "This example shows how to use the `continue` statement to skip the current iteration and continue with the next one (in this case, skipping even numbers)."
+        }
+      },
+      "Built-in Functions": {
+        "range()": {
+          "Description": "The `range()` function generates a sequence of numbers. It is often used in `for` loops.",
+          "Example": "for i in range(5):  # Generates numbers from 0 to 4\nfor i in range(1, 6):  # Generates numbers from 1 to 5\nfor i in range(0, 10, 2):  # Generates numbers from 0 to 8 with a step of 2"
+        },
+        "len()": {
+          "Description": "The `len()` function returns the number of items in an object.",
+          "Example": "length = len(fruits)  # Returns the length of the list 'fruits'"
+        },
+        "enumerate()": {
+          "Description": "The `enumerate()` function adds a counter to an iterable and returns it as an enumerate object.",
+          "Example": "for index, value in enumerate(fruits):\n    print(index, value)  # Prints the index and value of each item in the list 'fruits'"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: prints numbers from 1 to 10 using a `for` loop, prints the first 5 even numbers using a `while` loop, and iterates over a list of your favorite colors to print each one with its index.",
+        "Hint": "Use the `range()` function for the `for` loop, and a counter variable for the `while` loop. Use the `enumerate()` function to get the index and value when iterating over the list of colors."
+      }
+    }
+  }
+  

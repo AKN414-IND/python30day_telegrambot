@@ -1,0 +1,59 @@
+{
+    "Day 24": {
+      "Topic": "Introduction to Data Analysis with Pandas",
+      "Explanation": "Pandas is a powerful Python library for data manipulation and analysis. It provides data structures like Series and DataFrame to work with structured data. Pandas makes it easy to load, manipulate, analyze, and visualize data.",
+      "Examples": {
+        "Installing Pandas": {
+          "Code": "pip install pandas",
+          "Description": "This example shows how to install the Pandas library using pip."
+        },
+        "Creating a DataFrame": {
+          "Code": "import pandas as pd\n\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie'],\n    'Age': [25, 30, 35],\n    'City': ['New York', 'Los Angeles', 'Chicago']\n}\ndf = pd.DataFrame(data)\nprint(df)",
+          "Description": "This example shows how to create a DataFrame from a dictionary."
+        },
+        "Reading Data from a CSV File": {
+          "Code": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\nprint(df.head())",
+          "Description": "This example shows how to read data from a CSV file into a DataFrame using the `read_csv()` function."
+        },
+        "Basic DataFrame Operations": {
+          "Code": "import pandas as pd\n\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie'],\n    'Age': [25, 30, 35],\n    'City': ['New York', 'Los Angeles', 'Chicago']\n}\ndf = pd.DataFrame(data)\n\n# Accessing a column\ngender = df['Name']\nprint(gender)\n\n# Accessing multiple columns\nsubset = df[['Name', 'Age']]\nprint(subset)\n\n# Adding a new column\ndf['Gender'] = ['F', 'M', 'M']\nprint(df)",
+          "Description": "This example shows basic DataFrame operations such as accessing columns, accessing multiple columns, and adding a new column."
+        },
+        "Filtering Data": {
+          "Code": "import pandas as pd\n\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie'],\n    'Age': [25, 30, 35],\n    'City': ['New York', 'Los Angeles', 'Chicago']\n}\ndf = pd.DataFrame(data)\n\n# Filtering rows based on a condition\nfiltered_df = df[df['Age'] > 25]\nprint(filtered_df)",
+          "Description": "This example shows how to filter rows in a DataFrame based on a condition."
+        },
+        "Group By and Aggregation": {
+          "Code": "import pandas as pd\n\ndata = {\n    'Name': ['Alice', 'Bob', 'Charlie', 'Alice'],\n    'Age': [25, 30, 35, 25],\n    'City': ['New York', 'Los Angeles', 'Chicago', 'New York']\n}\ndf = pd.DataFrame(data)\n\ngrouped_df = df.groupby('Name').size()\nprint(grouped_df)",
+          "Description": "This example shows how to use the `groupby()` function to group data and perform aggregation operations."
+        }
+      },
+      "Built-in Functions": {
+        "read_csv()": {
+          "Description": "The `read_csv()` function reads a CSV file into a DataFrame.",
+          "Example": "df = pd.read_csv('data.csv')"
+        },
+        "head()": {
+          "Description": "The `head()` method returns the first n rows of a DataFrame.",
+          "Example": "df.head(10)"
+        },
+        "groupby()": {
+          "Description": "The `groupby()` method groups the DataFrame using a mapper or by a Series of columns.",
+          "Example": "grouped_df = df.groupby('Name').size()"
+        },
+        "size()": {
+          "Description": "The `size()` method returns the number of elements in the DataFrame.",
+          "Example": "size = df.size"
+        },
+        "describe()": {
+          "Description": "The `describe()` method generates descriptive statistics of the DataFrame.",
+          "Example": "df.describe()"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) reads data from a CSV file into a DataFrame, (2) filters rows where a certain column's value meets a condition, (3) adds a new column based on existing columns, and (4) groups the data by a column and performs an aggregation.",
+        "Hint": "Use the `read_csv()` function to load the data, filter rows using a condition, create a new column by applying operations on existing columns, and use the `groupby()` function to group and aggregate data."
+      }
+    }
+  }
+  

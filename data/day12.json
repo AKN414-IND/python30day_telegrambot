@@ -1,0 +1,59 @@
+{
+    "Day 12": {
+      "Topic": "Functions",
+      "Explanation": "Functions in Python are blocks of reusable code that perform a specific task. Functions help in making the code modular, organized, and more readable. They can accept input parameters and return output values.",
+      "Examples": {
+        "Defining a Function": {
+          "Code": "def greet(name):\n    print(f'Hello, {name}!')",
+          "Description": "This example shows how to define a simple function named `greet` that takes one parameter `name` and prints a greeting message."
+        },
+        "Calling a Function": {
+          "Code": "greet('Alice')  # Outputs: Hello, Alice!",
+          "Description": "This example shows how to call the `greet` function with the argument 'Alice'."
+        },
+        "Return Statement": {
+          "Code": "def add(a, b):\n    return a + b\n\nresult = add(3, 5)\nprint(result)  # Outputs: 8",
+          "Description": "This example shows how to define a function `add` that takes two parameters, adds them, and returns the result."
+        },
+        "Default Parameters": {
+          "Code": "def greet(name, message='Hello'):\n    print(f'{message}, {name}!')\n\ngreet('Alice')  # Outputs: Hello, Alice!\ngreet('Bob', 'Hi')  # Outputs: Hi, Bob!",
+          "Description": "This example shows how to define a function with a default parameter. The `message` parameter has a default value of 'Hello'."
+        },
+        "Keyword Arguments": {
+          "Code": "def greet(name, message):\n    print(f'{message}, {name}!')\n\ngreet(name='Alice', message='Hi')  # Outputs: Hi, Alice!",
+          "Description": "This example shows how to call a function using keyword arguments, specifying the parameter names explicitly."
+        },
+        "Variable-length Arguments": {
+          "Code": "def add(*numbers):\n    return sum(numbers)\n\nresult = add(1, 2, 3, 4)\nprint(result)  # Outputs: 10",
+          "Description": "This example shows how to define a function that accepts a variable number of arguments using `*args`. The `add` function sums all the numbers passed to it."
+        }
+      },
+      "Built-in Functions": {
+        "sum()": {
+          "Description": "The `sum()` function returns the sum of all items in an iterable.",
+          "Example": "total = sum([1, 2, 3, 4])  # Returns 10"
+        },
+        "max()": {
+          "Description": "The `max()` function returns the largest item in an iterable.",
+          "Example": "maximum = max([1, 2, 3, 4])  # Returns 4"
+        },
+        "min()": {
+          "Description": "The `min()` function returns the smallest item in an iterable.",
+          "Example": "minimum = min([1, 2, 3, 4])  # Returns 1"
+        },
+        "len()": {
+          "Description": "The `len()` function returns the number of items in an object.",
+          "Example": "length = len([1, 2, 3, 4])  # Returns 4"
+        },
+        "type()": {
+          "Description": "The `type()` function returns the type of an object.",
+          "Example": "t = type(5)  # Returns <class 'int'>"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that defines the following functions: a function that takes a list of numbers and returns the average, a function that takes a string and returns the number of vowels in the string, and a function that takes a variable number of arguments and returns their product. Test each function with appropriate inputs.",
+        "Hint": "Use the `sum()` and `len()` functions to calculate the average. Use a loop or list comprehension to count the vowels. Use `*args` to handle a variable number of arguments and the `*` operator to calculate the product."
+      }
+    }
+  }
+  

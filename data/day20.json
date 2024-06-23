@@ -1,0 +1,51 @@
+{
+    "Day 20": {
+      "Topic": "Comprehensions",
+      "Explanation": "Comprehensions provide a concise way to create lists, dictionaries, and sets in Python. They are more compact and often faster than traditional loops for creating these collections. Comprehensions can include conditions and nested loops to filter and transform data.",
+      "Examples": {
+        "List Comprehensions": {
+          "Code": "squares = [x**2 for x in range(10)]\nprint(squares)  # Outputs: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]",
+          "Description": "This example shows how to create a list of squares using a list comprehension."
+        },
+        "List Comprehensions with Condition": {
+          "Code": "even_squares = [x**2 for x in range(10) if x % 2 == 0]\nprint(even_squares)  # Outputs: [0, 4, 16, 36, 64]",
+          "Description": "This example shows how to create a list of squares for even numbers only using a condition in a list comprehension."
+        },
+        "Dictionary Comprehensions": {
+          "Code": "squares_dict = {x: x**2 for x in range(10)}\nprint(squares_dict)  # Outputs: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}",
+          "Description": "This example shows how to create a dictionary of squares using a dictionary comprehension."
+        },
+        "Set Comprehensions": {
+          "Code": "unique_squares = {x**2 for x in range(10)}\nprint(unique_squares)  # Outputs: {0, 1, 64, 4, 36, 9, 16, 81, 49, 25}",
+          "Description": "This example shows how to create a set of squares using a set comprehension."
+        },
+        "Nested Comprehensions": {
+          "Code": "matrix = [[j for j in range(5)] for i in range(5)]\nprint(matrix)  # Outputs: [[0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]",
+          "Description": "This example shows how to create a 5x5 matrix using nested list comprehensions."
+        }
+      },
+      "Built-in Functions": {
+        "sum()": {
+          "Description": "The `sum()` function adds all the elements in an iterable.",
+          "Example": "total = sum([x for x in range(10)])  # Outputs: 45"
+        },
+        "len()": {
+          "Description": "The `len()` function returns the number of items in an object.",
+          "Example": "length = len([x for x in range(10)])  # Outputs: 10"
+        },
+        "max()": {
+          "Description": "The `max()` function returns the largest item in an iterable.",
+          "Example": "maximum = max([x**2 for x in range(10)])  # Outputs: 81"
+        },
+        "min()": {
+          "Description": "The `min()` function returns the smallest item in an iterable.",
+          "Example": "minimum = min([x**2 for x in range(10)])  # Outputs: 0"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that uses comprehensions to achieve the following: create a list of cubes for numbers from 1 to 10, create a dictionary where the keys are numbers from 1 to 5 and the values are their cubes, and create a set of the first letter of each word in a given sentence.",
+        "Hint": "Use list comprehensions for the list of cubes, dictionary comprehensions for the dictionary of cubes, and set comprehensions for the set of first letters. For the sentence task, split the sentence into words and extract the first letter of each word."
+      }
+    }
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "Day 7": {
+    "Topic": "Control Flow: if, else, and elif Statements",
+    "Explanation": "Control flow statements allow you to control the execution of code based on conditions. The `if` statement is used to test a condition, and if the condition is true, the block of code inside the `if` statement is executed. The `else` statement can follow an `if` statement and executes if the `if` condition is false. The `elif` (short for else if) statement allows you to check multiple expressions for true and execute a block of code as soon as one of the conditions is true.",
+    "Examples": {
+      "If Statement": {
+        "Code": "x = 10\nif x > 5:\n    print('x is greater than 5')",
+        "Description": "This example checks if `x` is greater than 5. If true, it prints a message."
+      },
+      "If-Else Statement": {
+        "Code": "x = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is not greater than 5')",
+        "Description": "This example checks if `x` is greater than 5. If true, it prints a message; otherwise, it prints a different message."
+      },
+      "If-Elif-Else Statement": {
+        "Code": "x = 7\nif x > 10:\n    print('x is greater than 10')\nelif x > 5:\n    print('x is greater than 5 but less than or equal to 10')\nelse:\n    print('x is 5 or less')",
+        "Description": "This example checks multiple conditions using `if`, `elif`, and `else`."
+      }
+    },
+    "Exercise": {
+      "Task": "Write a Python script that asks the user for their age and prints a message based on the age: if the age is less than 18, print 'You are a minor.'; if the age is between 18 and 65, print 'You are an adult.'; if the age is 65 or older, print 'You are a senior citizen.'",
+      "Hint": "Use the input() function to get the user's age and the int() function to convert it to an integer. Use if, elif, and else statements to handle the different age ranges."
+    }
+  }
+}

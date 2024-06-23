@@ -1,0 +1,55 @@
+{
+    "Day 14": {
+      "Topic": "File Handling",
+      "Explanation": "File handling in Python involves reading from and writing to files. Python provides built-in functions to create, read, write, and close files. It is important to handle files properly to avoid resource leaks and ensure data integrity.",
+      "Examples": {
+        "Opening and Closing a File": {
+          "Code": "file = open('example.txt', 'w')\nfile.write('Hello, World!')\nfile.close()",
+          "Description": "This example shows how to open a file in write mode ('w'), write a string to it, and close the file to save the changes."
+        },
+        "Reading from a File": {
+          "Code": "file = open('example.txt', 'r')\ncontent = file.read()\nprint(content)\nfile.close()",
+          "Description": "This example shows how to open a file in read mode ('r'), read its content, print it, and close the file."
+        },
+        "Using 'with' Statement": {
+          "Code": "with open('example.txt', 'r') as file:\n    content = file.read()\n    print(content)",
+          "Description": "This example shows how to use the 'with' statement to open a file. This method automatically closes the file after the block of code is executed, even if an error occurs."
+        },
+        "Writing to a File": {
+          "Code": "with open('example.txt', 'a') as file:\n    file.write('\\nAppended text')",
+          "Description": "This example shows how to open a file in append mode ('a') and add text to the end of the file."
+        },
+        "Reading Line by Line": {
+          "Code": "with open('example.txt', 'r') as file:\n    for line in file:\n        print(line.strip())",
+          "Description": "This example shows how to read a file line by line using a 'for' loop. The strip() method removes any trailing newline characters."
+        }
+      },
+      "Built-in Functions": {
+        "open()": {
+          "Description": "The `open()` function opens a file and returns a file object. It takes the filename and mode as arguments.",
+          "Example": "file = open('example.txt', 'r')  # Opens the file in read mode"
+        },
+        "read()": {
+          "Description": "The `read()` method reads the entire content of the file as a string.",
+          "Example": "content = file.read()  # Reads the entire content of the file"
+        },
+        "readline()": {
+          "Description": "The `readline()` method reads a single line from the file.",
+          "Example": "line = file.readline()  # Reads the first line of the file"
+        },
+        "write()": {
+          "Description": "The `write()` method writes a string to the file.",
+          "Example": "file.write('Hello, World!')  # Writes the string to the file"
+        },
+        "close()": {
+          "Description": "The `close()` method closes the file. It is important to close a file after finishing operations to free up system resources.",
+          "Example": "file.close()  # Closes the file"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: creates a new file and writes a list of your favorite movies to it, one per line; then reads the file content and prints each movie to the console.",
+        "Hint": "Use the `with` statement to open the file for writing, iterate over your list of movies to write each one, and then use another `with` statement to read the file content and print each line."
+      }
+    }
+  }
+  

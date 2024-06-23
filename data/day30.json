@@ -1,0 +1,67 @@
+{"Day 30": {
+    "Topic": "Coding Practice: Part 2",
+    "Explanation": "Continue practicing coding questions to further solidify your understanding of Python programming concepts.",
+    "Coding Questions": [
+      {
+        "Question": "16. Write a Python program to implement a queue using a list.",
+        "Hint": "Use list methods `append()` for enqueue and `pop(0)` for dequeue."
+      },
+      {
+        "Question": "17. Implement a function to find the longest common prefix in a list of strings.",
+        "Hint": "Compare characters of the strings one by one."
+      },
+      {
+        "Question": "18. Write a function to perform matrix multiplication.",
+        "Hint": "Use nested loops to multiply rows and columns."
+      },
+      {
+        "Question": "19. Implement a function to check if a binary tree is a valid binary search tree.",
+        "Hint": "Check the BST property: left subtree values < root < right subtree values."
+      },
+      {
+        "Question": "20. Write a Python program to find the majority element in a list.",
+        "Hint": "A majority element appears more than n/2 times in the list."
+      },
+      {
+        "Question": "21. Implement a function to find the k-th largest element in a list.",
+        "Hint": "Sort the list and find the k-th largest element."
+      },
+      {
+        "Question": "22. Write a program to solve the Tower of Hanoi problem.",
+        "Hint": "Use recursion to move disks between rods."
+      },
+      {
+        "Question": "23. Implement a function to rotate a matrix by 90 degrees.",
+        "Hint": "Transpose the matrix and then reverse each row."
+      },
+      {
+        "Question": "24. Write a function to find the median of two sorted arrays.",
+        "Hint": "Use a binary search approach to find the median."
+      },
+      {
+        "Question": "25. Implement a function to merge overlapping intervals.",
+        "Hint": "Sort the intervals and merge them if they overlap."
+      },
+      {
+        "Question": "26. Write a Python program to validate an IP address.",
+        "Hint": "Check the format and ranges of each segment of the IP address."
+      },
+      {
+        "Question": "27. Implement a function to convert a binary tree to a doubly linked list.",
+        "Hint": "Perform an in-order traversal to link nodes in sorted order."
+      },
+      {
+        "Question": "28. Write a function to solve the N-Queens problem.",
+        "Hint": "Use backtracking to place queens on the board."
+      },
+      {
+        "Question": "29. Implement a function to find the shortest path in a graph using Dijkstra's algorithm.",
+        "Hint": "Use a priority queue to explore the shortest paths."
+      },
+      {
+        "Question": "30. Write a Python program to evaluate a postfix expression.",
+        "Hint": "Use a stack to evaluate the expression."
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "Day 26": {
+      "Topic": "Working with Databases in Python",
+      "Explanation": "Python provides several libraries for interacting with databases. SQLite is a popular choice for small to medium-sized applications due to its simplicity and ease of use. The `sqlite3` module in Python allows you to create, read, update, and delete records in an SQLite database.",
+      "Examples": {
+        "Creating a Database and Table": {
+          "Code": "import sqlite3\n\n# Connect to SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect('example.db')\n\n# Create a cursor object\ncur = conn.cursor()\n\n# Create a table\ncur.execute('''\nCREATE TABLE IF NOT EXISTS users (\n    id INTEGER PRIMARY KEY,\n    name TEXT NOT NULL,\n    age INTEGER NOT NULL\n)\n''')\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()",
+          "Description": "This example shows how to create a database and a table using the `sqlite3` module."
+        },
+        "Inserting Data": {
+          "Code": "import sqlite3\n\nconn = sqlite3.connect('example.db')\ncur = conn.cursor()\n\n# Insert data into the table\ncur.execute('INSERT INTO users (name, age) VALUES (?, ?)', ('Alice', 25))\ncur.execute('INSERT INTO users (name, age) VALUES (?, ?)', ('Bob', 30))\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()",
+          "Description": "This example shows how to insert data into a table using the `sqlite3` module."
+        },
+        "Querying Data": {
+          "Code": "import sqlite3\n\nconn = sqlite3.connect('example.db')\ncur = conn.cursor()\n\n# Query data from the table\ncur.execute('SELECT * FROM users')\nrows = cur.fetchall()\n\nfor row in rows:\n    print(row)\n\nconn.close()",
+          "Description": "This example shows how to query data from a table using the `sqlite3` module."
+        },
+        "Updating Data": {
+          "Code": "import sqlite3\n\nconn = sqlite3.connect('example.db')\ncur = conn.cursor()\n\n# Update data in the table\ncur.execute('UPDATE users SET age = ? WHERE name = ?', (26, 'Alice'))\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()",
+          "Description": "This example shows how to update data in a table using the `sqlite3` module."
+        },
+        "Deleting Data": {
+          "Code": "import sqlite3\n\nconn = sqlite3.connect('example.db')\ncur = conn.cursor()\n\n# Delete data from the table\ncur.execute('DELETE FROM users WHERE name = ?', ('Bob',))\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()",
+          "Description": "This example shows how to delete data from a table using the `sqlite3` module."
+        }
+      },
+      "Built-in Functions": {
+        "sqlite3.connect()": {
+          "Description": "The `sqlite3.connect()` function connects to an SQLite database. If the database does not exist, it creates a new one.",
+          "Example": "conn = sqlite3.connect('example.db')"
+        },
+        "cursor()": {
+          "Description": "The `cursor()` method creates a cursor object, which is used to execute SQL commands.",
+          "Example": "cur = conn.cursor()"
+        },
+        "execute()": {
+          "Description": "The `execute()` method executes a single SQL command.",
+          "Example": "cur.execute('SELECT * FROM users')"
+        },
+        "fetchall()": {
+          "Description": "The `fetchall()` method retrieves all rows of a query result.",
+          "Example": "rows = cur.fetchall()"
+        },
+        "commit()": {
+          "Description": "The `commit()` method saves all changes made in the current transaction.",
+          "Example": "conn.commit()"
+        },
+        "close()": {
+          "Description": "The `close()` method closes the database connection.",
+          "Example": "conn.close()"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) creates a new SQLite database and a table, (2) inserts multiple records into the table, (3) queries and prints all records, (4) updates a record, (5) deletes a record, and (6) queries and prints all remaining records to verify the changes.",
+        "Hint": "Use the `sqlite3` module to perform all database operations. Follow the examples to create a table, insert data, query data, update data, and delete data."
+      }
+    }
+  }
+  

@@ -1,0 +1,104 @@
+{
+    "Day 9": {
+      "Topic": "Tuples and Sets",
+      "Explanation": {
+        "Tuples": "Tuples are similar to lists but are immutable, meaning their elements cannot be changed after they are created. Tuples are defined using parentheses ().",
+        "Sets": "Sets are unordered collections of unique elements. Sets are defined using curly braces {} or the set() function."
+      },
+      "Examples": {
+        "Tuples": {
+          "Creating a Tuple": {
+            "Code": "my_tuple = ('apple', 'banana', 'cherry')",
+            "Description": "This example shows how to create a tuple of fruits."
+          },
+          "Accessing Elements": {
+            "Code": "first_fruit = my_tuple[0]  # 'apple'\nlast_fruit = my_tuple[-1]  # 'cherry'",
+            "Description": "This example shows how to access elements in a tuple. Indexing works the same as with lists."
+          },
+          "Unpacking": {
+            "Code": "a, b, c = my_tuple",
+            "Description": "This example shows how to unpack a tuple into individual variables."
+          }
+        },
+        "Sets": {
+          "Creating a Set": {
+            "Code": "my_set = {'apple', 'banana', 'cherry'}\nmy_set = set(['apple', 'banana', 'cherry'])",
+            "Description": "These examples show how to create a set of fruits using curly braces and the set() function."
+          },
+          "Adding Elements": {
+            "Code": "my_set.add('orange')",
+            "Description": "This example shows how to add a new element to a set using the add() method."
+          },
+          "Removing Elements": {
+            "Code": "my_set.remove('banana')",
+            "Description": "This example shows how to remove an element from a set using the remove() method."
+          },
+          "Set Operations": {
+            "Union": {
+              "Code": "set1 = {'apple', 'banana', 'cherry'}\nset2 = {'banana', 'cherry', 'date'}\nunion_set = set1.union(set2)  # {'apple', 'banana', 'cherry', 'date'}",
+              "Description": "This example shows how to perform a union operation, combining elements from both sets."
+            },
+            "Intersection": {
+              "Code": "intersection_set = set1.intersection(set2)  # {'banana', 'cherry'}",
+              "Description": "This example shows how to perform an intersection operation, finding common elements between sets."
+            },
+            "Difference": {
+              "Code": "difference_set = set1.difference(set2)  # {'apple'}",
+              "Description": "This example shows how to perform a difference operation, finding elements in set1 that are not in set2."
+            }
+          }
+        }
+      },
+      "Built-in Functions": {
+        "Tuples": {
+          "len()": {
+            "Description": "The len() function returns the number of elements in a tuple.",
+            "Example": "length = len(my_tuple)  # Returns the length of my_tuple."
+          },
+          "count()": {
+            "Description": "The count() method returns the number of times a specified value appears in a tuple.",
+            "Example": "count = my_tuple.count('apple')  # Returns the count of 'apple' in the tuple."
+          },
+          "index()": {
+            "Description": "The index() method returns the index of the first occurrence of a specified value in a tuple.",
+            "Example": "index = my_tuple.index('banana')  # Returns the index of 'banana' in the tuple."
+          }
+        },
+        "Sets": {
+          "add()": {
+            "Description": "The add() method adds a single element to the set.",
+            "Example": "my_set.add('orange')  # Adds 'orange' to the set."
+          },
+          "remove()": {
+            "Description": "The remove() method removes a specified element from the set. If the element does not exist, it raises a KeyError.",
+            "Example": "my_set.remove('banana')  # Removes 'banana' from the set."
+          },
+          "discard()": {
+            "Description": "The discard() method removes a specified element from the set. If the element does not exist, it does not raise an error.",
+            "Example": "my_set.discard('banana')  # Removes 'banana' from the set if it exists."
+          },
+          "clear()": {
+            "Description": "The clear() method removes all elements from the set.",
+            "Example": "my_set.clear()  # Removes all elements from the set."
+          },
+          "union()": {
+            "Description": "The union() method returns a new set containing all unique elements from the original sets.",
+            "Example": "union_set = set1.union(set2)  # Returns the union of set1 and set2."
+          },
+          "intersection()": {
+            "Description": "The intersection() method returns a new set containing only the elements that are present in both sets.",
+            "Example": "intersection_set = set1.intersection(set2)  # Returns the intersection of set1 and set2."
+          },
+          "difference()": {
+            "Description": "The difference() method returns a new set containing elements that are in the first set but not in the second set.",
+            "Example": "difference_set = set1.difference(set2)  # Returns the difference between set1 and set2."
+          }
+        }
+      },
+      "Exercise": {
+        "Task": "Create a tuple of your top three favorite foods and print each one. Create a set of your favorite fruits and perform the following operations: add a new fruit to the set, remove a fruit from the set, and find the union and intersection with another set of fruits.",
+        "Hint": "Use the examples and built-in functions provided. For the set operations, create another set of fruits to perform union and intersection operations."
+      }
+    }
+  }
+  

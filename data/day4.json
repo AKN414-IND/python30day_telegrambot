@@ -1,0 +1,19 @@
+{
+  "Day 4": {
+    "Topic": "Variables and Data Types",
+    "Explanation": "In Python, variables are used to store data that can be used and manipulated throughout your code. Python is dynamically typed, which means you do not need to declare a variable's type ahead of time. Common data types in Python include integers, floating-point numbers, strings, and booleans.",
+    "Example": {
+      "Code": {
+        "Integers": "x = 5",
+        "Floats": "y = 3.14",
+        "Strings": "greeting = 'Hello, World!'",
+        "Booleans": "is_active = True"
+      },
+      "Description": "This example shows how to declare different data types in Python. 'x' is an integer, 'y' is a float, 'greeting' is a string, and 'is_active' is a boolean."
+    },
+    "Exercise": {
+      "Task": "Create a Python script that defines variables for your age, height (in meters), first name, and whether you are a student (True or False). Print each variable with a description.",
+      "Hint": "Define the variables and use the print function to output each one, like so: print('My age is:', age)"
+    }
+  }
+}

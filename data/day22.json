@@ -1,0 +1,51 @@
+{
+    "Day 22": {
+      "Topic": "Working with APIs",
+      "Explanation": "APIs (Application Programming Interfaces) allow different software applications to communicate with each other. In Python, you can use libraries like `requests` to interact with APIs, send HTTP requests, and handle responses. Common tasks include fetching data from web services, sending data to APIs, and handling JSON data.",
+      "Examples": {
+        "Making a GET Request": {
+          "Code": "import requests\n\nresponse = requests.get('https://jsonplaceholder.typicode.com/todos/1')\ndata = response.json()\nprint(data)",
+          "Description": "This example shows how to use the `requests` library to make a GET request to an API and handle the JSON response."
+        },
+        "Making a POST Request": {
+          "Code": "import requests\n\nurl = 'https://jsonplaceholder.typicode.com/posts'\npost_data = {\n    'title': 'foo',\n    'body': 'bar',\n    'userId': 1\n}\nresponse = requests.post(url, json=post_data)\ndata = response.json()\nprint(data)",
+          "Description": "This example shows how to use the `requests` library to make a POST request to an API, send JSON data, and handle the response."
+        },
+        "Handling Query Parameters": {
+          "Code": "import requests\n\nparams = {'userId': 1}\nresponse = requests.get('https://jsonplaceholder.typicode.com/todos', params=params)\ndata = response.json()\nprint(data)",
+          "Description": "This example shows how to include query parameters in a GET request to filter data from an API."
+        },
+        "Handling Headers": {
+          "Code": "import requests\n\nheaders = {'Authorization': 'Bearer YOUR_ACCESS_TOKEN'}\nresponse = requests.get('https://jsonplaceholder.typicode.com/todos/1', headers=headers)\ndata = response.json()\nprint(data)",
+          "Description": "This example shows how to include headers in a request, which is often necessary for authentication."
+        },
+        "Error Handling": {
+          "Code": "import requests\n\nresponse = requests.get('https://jsonplaceholder.typicode.com/todos/1')\nif response.status_code == 200:\n    data = response.json()\n    print(data)\nelse:\n    print('Request failed with status code:', response.status_code)",
+          "Description": "This example shows how to handle errors by checking the response status code and taking appropriate action."
+        }
+      },
+      "Built-in Functions": {
+        "requests.get()": {
+          "Description": "The `requests.get()` function sends a GET request to the specified URL and returns a response object.",
+          "Example": "response = requests.get('https://jsonplaceholder.typicode.com/todos/1')"
+        },
+        "requests.post()": {
+          "Description": "The `requests.post()` function sends a POST request to the specified URL with the given data and returns a response object.",
+          "Example": "response = requests.post('https://jsonplaceholder.typicode.com/posts', json=post_data)"
+        },
+        "response.json()": {
+          "Description": "The `response.json()` method parses the JSON response content and returns it as a Python dictionary.",
+          "Example": "data = response.json()"
+        },
+        "response.status_code": {
+          "Description": "The `response.status_code` attribute returns the HTTP status code of the response.",
+          "Example": "status_code = response.status_code"
+        }
+      },
+      "Exercise": {
+        "Task": "Write a Python script that does the following: (1) fetches a list of users from an API, (2) filters the users based on a condition (e.g., username contains 'S'), (3) makes a POST request to add a new user, and (4) handles any potential errors.",
+        "Hint": "Use the `requests` library to make GET and POST requests. Use list comprehensions or loops to filter the users. Check the response status codes to handle errors appropriately."
+      }
+    }
+  }
+  
