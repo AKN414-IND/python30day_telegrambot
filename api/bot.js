@@ -6,44 +6,44 @@ const path = require('path');
 // Week-wise topics data
 const topicsData = {
   "Week 1": {
-    "Day 1": "Introduction to Python: What is Python and why use it?",
-    "Day 2": "Setting up Python: Installing Python and setting up the development environment.",
-    "Day 3": "Your First Python Program: Writing and running a simple program.",
-    "Day 4": "Variables and Data Types: Understanding data types and variables.",
-    "Day 5": "Basic Operators: Arithmetic, assignment, comparison, logical operators.",
-    "Day 6": "String Manipulation: Basic string functions and operations.",
-    "Day 7": "Control Flow: if, else, and elif statements."
+    "Day1": "Introduction to Python: What is Python and why use it?",
+    "Day2": "Setting up Python: Installing Python and setting up the development environment.",
+    "Day3": "Your First Python Program: Writing and running a simple program.",
+    "Day4": "Variables and Data Types: Understanding data types and variables.",
+    "Day5": "Basic Operators: Arithmetic, assignment, comparison, logical operators.",
+    "Day6": "String Manipulation: Basic string functions and operations.",
+    "Day7": "Control Flow: if, else, and elif statements."
   },
   "Week 2": {
-    "Day 8": "Lists and List Operations: Creating lists, accessing elements, list comprehensions.",
-    "Day 9": "Tuples and Sets: Differences from lists, usage, and properties.",
-    "Day 10": "Dictionaries: Creating, accessing, and manipulating dictionaries.",
-    "Day 11": "Looping Constructs: Using for loops and while loops.",
-    "Day 12": "Functions: Defining and calling functions, arguments, and return values.",
-    "Day 13": "Modules and Packages: Importing and using modules, exploring standard libraries.",
-    "Day 14": "File Handling: Reading from and writing to files."
+    "Day8": "Lists and List Operations: Creating lists, accessing elements, list comprehensions.",
+    "Day9": "Tuples and Sets: Differences from lists, usage, and properties.",
+    "Day10": "Dictionaries: Creating, accessing, and manipulating dictionaries.",
+    "Day11": "Looping Constructs: Using for loops and while loops.",
+    "Day12": "Functions: Defining and calling functions, arguments, and return values.",
+    "Day13": "Modules and Packages: Importing and using modules, exploring standard libraries.",
+    "Day14": "File Handling: Reading from and writing to files."
   },
   "Week 3": {
-    "Day 15": "Error and Exception Handling: Try, except block, finally clause.",
-    "Day 16": "Classes and Objects: Introduction to OOP, creating classes and objects.",
-    "Day 17": "Inheritance and Polymorphism: Extending classes, overriding methods.",
-    "Day 18": "Decorators: Understanding decorators and their usage.",
-    "Day 19": "Generators and Iterators: Creating and using iterators and generators.",
-    "Day 20": "Comprehensions: List, dictionary, and set comprehensions.",
-    "Day 21": "Lambda Functions: Writing anonymous functions."
+    "Day15": "Error and Exception Handling: Try, except block, finally clause.",
+    "Day16": "Classes and Objects: Introduction to OOP, creating classes and objects.",
+    "Day17": "Inheritance and Polymorphism: Extending classes, overriding methods.",
+    "Day18": "Decorators: Understanding decorators and their usage.",
+    "Day19": "Generators and Iterators: Creating and using iterators and generators.",
+    "Day20": "Comprehensions: List, dictionary, and set comprehensions.",
+    "Day21": "Lambda Functions: Writing anonymous functions."
   },
   "Week 4": {
-    "Day 22": "Working with APIs: Making network requests, parsing JSON.",
-    "Day 23": "Introduction to Web Scraping: Using BeautifulSoup or similar libraries.",
-    "Day 24": "Introduction to Data Analysis: Using Pandas for basic data manipulation.",
-    "Day 25": "Plotting Data: Introduction to Matplotlib or Seaborn for data visualization.",
-    "Day 26": "Databases in Python: Connecting to SQL databases, executing queries.",
-    "Day 27": "Testing in Python: Basic unit tests using unittest or pytest.",
-    "Day 28": "Virtual Environments: Why and how to use virtual environments."
+    "Day22": "Working with APIs: Making network requests, parsing JSON.",
+    "Day23": "Introduction to Web Scraping: Using BeautifulSoup or similar libraries.",
+    "Day24": "Introduction to Data Analysis: Using Pandas for basic data manipulation.",
+    "Day25": "Plotting Data: Introduction to Matplotlib or Seaborn for data visualization.",
+    "Day26": "Databases in Python: Connecting to SQL databases, executing queries.",
+    "Day27": "Testing in Python: Basic unit tests using unittest or pytest.",
+    "Day28": "Virtual Environments: Why and how to use virtual environments."
   },
   "Week 5": {
-    "Day 29": "Coding Practice: Part 1",
-    "Day 30": "Coding Practice: Part 2"
+    "Day29": "Coding Practice: Part 1",
+    "Day30": "Coding Practice: Part 2"
   }
 };
 
